@@ -1,38 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: black;
+}
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  max-width: 90%;
+  min-height: 50%;
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.switch{
+    display: flex;  
+    width: 100%;
+}
+/* span .MuiSwitch-track{
+  background-color: rgb(6, 130, 93) !important;
+}
+span .MuiSwitch-thumb{
   color: white;
+} */
+.box-container{
+  width: 100%;
+}
+.box{
+max-width:96% ;
+margin-top: 30px;
+}
+/* styling slider rail and thumb */
+/* span .MuiSlider-rail {
+  color: gray !important;
+  height: 8px;
+  border-radius: 2px;
+}
+span .MuiSlider-thumb{
+  color: white;
+  border: 5px solid rgb(152,71,255);
+} */
+.slider-credit{
+  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding-left: 60px;
+}
+.credit br{
+  display: none;
+}
+p{
+  margin: 5px;
+  color: gray;
+}
+ p span{
+  color:rgb(152,71,255) ;
+  font-weight: 700;
+}
+.btn:hover{
+background-color:rgb(127, 50, 228) !important ;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@media (max-width:1068px) {
+  .container{
+    width: 90%;
+  }
+  .box{
+max-width:95% ;
+}
+.slider-credit{
+ padding-left: 40px ;
+}
+p br{
+  display: none;
+}
+.credit br{
+  display:block;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:600px) {
+  .container{
+    width: 70%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .box{
+max-width:95% ;
+}
+.slider-credit{
+ padding-left: 40px ;
+}
+p br{
+  display: none;
+}
+.credit br{
+  display:block;
+}
 }
